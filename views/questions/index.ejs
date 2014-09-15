@@ -1,0 +1,110 @@
+<!--模板布局-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--head 部分-->
+<% include ../layout/header.ejs %>
+<body class="home-template">
+<!--页面顶部-->
+<% include ../layout/top.ejs %>
+
+
+<div class="container body-main">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-success">
+                <!-- Default panel contents -->
+                <div class="panel-heading">常见问题</div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <!--搜索-->
+                        <form class="form-inline" role="search">
+                            <!--<div class="btn-group">
+                                <button type="button" class="btn btn-success">按浏览量排序</button>
+                                <button type="button" class="btn btn-success">按发布时间排序</button>
+                                <button type="button" class="btn btn-success">按更新时间排序</button>
+                            </div>
+
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;-->
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="输入搜索关键词">
+                            </div>
+                            <button type="submit" class="btn btn-success">搜 索</button>
+                        </form>
+
+                    </li>
+                    <li class="list-group-item">
+                        <span><a href="/question?key=fjkjfkjsdkajfkjasjfdkj;saklf">Express 不是内部命令或方案....</a></span>
+                        <span><a href="">浏览<span>100</span></a></span>
+                        <span><a href="">最近更新<span>2014-09-15</span></a></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span><a href="/question?key=fjkjfkjsdkajfkjasjfdkj;saklf">Express 不是内部命令或方案....</a></span>
+                        <span><a href="">浏览<span>100</span></a></span>
+                        <span><a href="">最近更新<span>2014-09-15</span></a></span>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="pagination" style="margin:0 auto">
+                            <li><a href="#"><span>&laquo;&nbsp;&nbsp;</span>上一页</a></li>
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">.......</a></li>
+                            <li><a href="#">14</a></li>
+                            <li><a href="#">15</a></li>
+                            <li><a href="#">尾页</a></li>
+                            <li><a href="#">下一页<span>&nbsp;&nbsp;&raquo;</span></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-success">
+                <!-- Default panel contents -->
+                <div class="panel-heading">操作</div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">1. 使用MarkDown语法</li>
+                    <li class="list-group-item">
+                        <a class="btn btn-success" href="/question/add">发布话题</a>
+                        <a class="btn btn-success">修改签名</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel panel-success">
+                <!-- Default panel contents -->
+                <div class="panel-heading">搜索排行榜</div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="">Express 不是内部命令或方案....</a></li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--页面底部-->
+<% include ../layout/footer.ejs %>
+</body>
+<!--引用的外部JS文件-->
+<% include ../layout/buttom.ejs %>
+</html>
